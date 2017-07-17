@@ -61,13 +61,13 @@ d) Select antenna pairs and polarizations using ant_str argument
 Basic options are 'auto', 'cross', or 'all'.  The ant_str can also contain:
 
 1. Individual antenna number(s):
-____
+====
 
 - 1: returns all antenna pairs containing antenna number 1 (including the auto correlation)
 - 1,2: returns all antenna pairs containing antennas 1 and 2
 
 2. Individual baseline(s):
-____
+====
 
 - 1_2: returns only the antenna pair (1,2)
 - 1_2,1_3,1_10: returns antenna pairs (1,2),(1,3),(1,10)
@@ -91,7 +91,7 @@ all antenna pairs kept in the object will retain data for each specified polariz
 - 1_3l,2_3x: returns antenna pairs (1,3), (2,3) and polarizations ll, rl, xx, and yx
 
 4. Stokes parameter(s):
-____
+====
 
 Can be passed lower/uppercase
 
@@ -99,7 +99,7 @@ Can be passed lower/uppercase
 - q,V: keeps both Stokes Q and V
 
 5. Minus sign(s):
-____
+====
 
 If a minus sign is present in front of an antenna number, it will not be kept in the data
 
