@@ -75,7 +75,7 @@ ____
 3. Antenna number(s) and polarization(s):
 ____
 
-when polarization information is passed with antenna numbers,
+When polarization information is passed with antenna numbers,
 all antenna pairs kept in the object will retain data for each specified polarization
     - 1x: returns all antenna pairs containing antenna number 1 and polarizations xx and xy
     - 2x_3y: returns the antenna pair (2,3) and polarization xy
@@ -88,11 +88,13 @@ all antenna pairs kept in the object will retain data for each specified polariz
     - 1_3l,2_3x: returns antenna pairs (1,3), (2,3) and polarizations ll, rl, xx, and yx
 4. Stokes parameter(s):
 ____
+
 Can be passed lower/uppercase
     - i,I: keeps only Stokes I
     - q,V: keeps both Stokes Q and V
 5. Minus sign(s):
 ____
+
 If a minus sign is present in front of an antenna number, it will not be kept in the data
     - 1,-3: returns all antenna pairs containing antenna 1, but removes any containing antenna 3
     - 1,-1_3: returns all antenna pairs containing antenna 1, except the antenna pair (1,3)
