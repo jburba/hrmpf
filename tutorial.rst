@@ -66,6 +66,19 @@ Basic options are 'auto', 'cross', or 'all'.  The ant_str can also contain:
 - 1: returns all antenna pairs containing antenna number 1 (including the auto correlation)
 - 1,2: returns all antenna pairs containing antennas 1 and 2
 
+::
+
+    from pyuvdata import UVData
+    UV = UVData()
+    filename = 'pyuvdata/data/day2_TDEM0003_10s_norx_1src_1spw.uvfits'
+    UV.read_uvfits(filename)
+    # Print all the antennas numbers with data in the original file
+    print(UV.get_antpairs())
+    # Apply select to UV object
+    UV.select(ant_str='1,2,3')
+    # Print all the antennas numbers with data after the select
+    print(UV.get_antpairs())
+
 2. Individual baseline(s):
 ====
 
@@ -73,6 +86,19 @@ Basic options are 'auto', 'cross', or 'all'.  The ant_str can also contain:
 - 1_2,1_3,1_10: returns antenna pairs (1,2),(1,3),(1,10)
 - (1,2)_3: returns antenna pairs (1,3),(2,3)
 - 1_(2,3): returns antenna pairs (1,2),(1,3)
+
+::
+
+    from pyuvdata import UVData
+    UV = UVData()
+    filename = 'pyuvdata/data/day2_TDEM0003_10s_norx_1src_1spw.uvfits'
+    UV.read_uvfits(filename)
+    # Print all the antennas numbers with data in the original file
+    print(UV.get_antpairs())
+    # Apply select to UV object
+    UV.select(ant_str='(1,2)_(3,4)')
+    # Print all the antennas numbers with data after the select
+    print(UV.get_antpairs())
 
 3. Antenna number(s) and polarization(s):
 ====
@@ -89,6 +115,19 @@ all antenna pairs kept in the object will retain data for each specified polariz
 - 2r_3: returns antenna pair (2,3) and polarizations rr and rl
 - 1l_3,2x_3: returns antenna pairs (1,3), (2,3) and polarizations ll, lr, xx, and xy
 - 1_3l,2_3x: returns antenna pairs (1,3), (2,3) and polarizations ll, rl, xx, and yx
+
+::
+
+    from pyuvdata import UVData
+    UV = UVData()
+    filename = 'pyuvdata/data/day2_TDEM0003_10s_norx_1src_1spw.uvfits'
+    UV.read_uvfits(filename)
+    # Print all the antennas numbers and polarizations with data in the original file
+    print(UV.get_antpairs(), UV.get_pols())
+    # Apply select to UV object
+    UV.select(ant_str='1r_2l,1l_3l,1r_4r')
+    # Print all the antennas numbers and polarizations with data after the select
+    print(UV.get_antpairs(), UV.get_pols())
 
 4. Stokes parameter(s):
 ====
@@ -110,7 +149,6 @@ If a minus sign is present in front of an antenna number, it will not be kept in
 ::
 
     from pyuvdata import UVData
-    import numpy as np
     UV = UVData()
     filename = 'pyuvdata/data/day2_TDEM0003_10s_norx_1src_1spw.uvfits'
     UV.read_uvfits(filename)
