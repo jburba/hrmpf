@@ -61,7 +61,7 @@ d) Select antenna pairs and polarizations using ant_str argument
 Basic options are 'auto', 'cross', or 'all'.  The ant_str can also contain:
 
 1. Individual antenna number(s):
-
+____
 
 - 1: returns all antenna pairs containing antenna number 1 (including the auto correlation)
 - 1,2: returns all antenna pairs containing antennas 1 and 2
@@ -76,7 +76,6 @@ ____
 
 3. Antenna number(s) and polarization(s):
 ____
-
 When polarization information is passed with antenna numbers,
 all antenna pairs kept in the object will retain data for each specified polarization
 
