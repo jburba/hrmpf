@@ -75,7 +75,7 @@ ____
 - 1_(2,3): returns antenna pairs (1,2),(1,3)
 
 3. Antenna number(s) and polarization(s):
-****
+____
 
 When polarization information is passed with antenna numbers,
 all antenna pairs kept in the object will retain data for each specified polarization
@@ -91,7 +91,7 @@ all antenna pairs kept in the object will retain data for each specified polariz
 - 1_3l,2_3x: returns antenna pairs (1,3), (2,3) and polarizations ll, rl, xx, and yx
 
 4. Stokes parameter(s):
-====
+____
 
 Can be passed lower/uppercase
 
