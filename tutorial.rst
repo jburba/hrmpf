@@ -74,7 +74,8 @@ ____
 - (1,2)_3: returns antenna pairs (1,3),(2,3)
 - 1_(2,3): returns antenna pairs (1,2),(1,3)
 
-3. Antenna number(s) and polarization(s):____  test
+3. Antenna number(s) and polarization(s):
+Test
 ____
 
 When polarization information is passed with antenna numbers,
