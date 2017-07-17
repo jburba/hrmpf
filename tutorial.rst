@@ -75,8 +75,6 @@ ____
 - 1_(2,3): returns antenna pairs (1,2),(1,3)
 
 3. Antenna number(s) and polarization(s):
-Test
-____
 
 When polarization information is passed with antenna numbers,
 all antenna pairs kept in the object will retain data for each specified polarization
