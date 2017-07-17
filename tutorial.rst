@@ -132,7 +132,7 @@ all antenna pairs kept in the object will retain data for each specified polariz
 4. Stokes parameter(s):
 ====
 
-Can be passed lower/uppercase
+Can be passed lowercase or uppercase
 
 - i,I: keeps only Stokes I
 - q,V: keeps both Stokes Q and V
