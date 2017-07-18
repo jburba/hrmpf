@@ -290,8 +290,7 @@ all antenna pairs kept in the object will retain data for each specified polariz
 
 - 1x: returns all antenna pairs containing antenna number 1 and polarizations xx and xy
 - 2x_3y: returns the antenna pair (2,3) and polarization xy
-- 1r_2l,1l_3l,1r_4r: returns antenna pairs (1,2), (1,3), (1,4) and polarizations rr, ll, and rl.
-This yields a complete list of baselines with polarizations of 1r_2l, 1l_2l, 1r_2r, 1r_3l, 1l_3l, 1r_3r, 1r_11l, 1l_11l, and 1r_11r.
+- 1r_2l,1l_3l,1r_4r: returns antenna pairs (1,2), (1,3), (1,4) and polarizations rr, ll, and rl.  This yields a complete list of baselines with polarizations of 1r_2l, 1l_2l, 1r_2r, 1r_3l, 1l_3l, 1r_3r, 1r_11l, 1l_11l, and 1r_11r.
 - (1x,2y)_(3x,4y): returns antenna pairs (1,3),(1,4),(2,3),(2,4) and polarizations xx, yy, xy, and yx
 - 2l_3: returns antenna pair (2,3) and polarizations ll and lr
 - 2r_3: returns antenna pair (2,3) and polarizations rr and rl
